@@ -5,9 +5,8 @@
 public class BankAccount
 {
    private double balance;
-   private double InterestPct;
-   private double startBal;
-   private double calcinterest;
+   private double Interestrate;
+   
    
    /**
       Constructs a bank account with balance.
@@ -16,7 +15,7 @@ public class BankAccount
     public BankAccount(double startBal, double InterestPct)
     {
       balance =startBal;
-      double Interestrate=InterestPct;
+    Interestrate= InterestPct;
     System.out.println("Created new account with balance "+startBal+" and interest rate "+InterestPct);
      
     }
@@ -58,11 +57,11 @@ public class BankAccount
 
    
    
-   public void calcinterest(double calcinterest, double balance, double InterestPct) {
-    { calcinterest=balance*InterestPct;
-   } System.out.println("Interest: "+calcinterest); 
+   public void calcinterest() {
+   double interest=balance*Interestrate;
+   System.out.println("Interest: "+interest); 
    
-	    balance=balance+calcinterest;
+	    balance=balance+interest;
 		  System.out.println("The account balance is: $" + balance);
    }  
 
@@ -70,8 +69,8 @@ public class BankAccount
       Gets the current balance of this bank account.
       @return the current balance
    */
-   public double getBalance(double balance)
-   {System.out.print("The account balance is: $");
+   public double getBalance()
+   {
       return balance;}
    
 }

@@ -38,12 +38,11 @@ public class BankAccountTester {
 		      {System.out.print("If you want me to generate Interest, enter 'Yes': ");
 		  response=in.next();
 		     if (response.equals("Yes")) {
-		  			  myBankAccount.calcinterest(calcinterest, balance, InterestPct);
+		  			  myBankAccount.calcinterest();
 		     } 
 		     else 
-		    	 System.out.print(myBankAccount.getBalance(balance));
+		    	 System.out.print(myBankAccount.getBalance());
 			 return;}
 			  
 	}
 }
-
