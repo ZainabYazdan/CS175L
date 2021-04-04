@@ -29,6 +29,6 @@ public class BankThreshold {
 		
 	
 	System.out.print("Goodbye!");
-	in.close();
+	
 	}
 }
