@@ -13,15 +13,14 @@ public class randArrayAndSearch {
 		Random num=new Random();
 		
 		for (int i=0; i<values.length; i++)
-		    {
+	    {
 			int random=num.nextInt(25) + 1; 
 			values[i]=random;
 			System.out.print(values[i]);
 			if (i<values.length - 1)
-			{
+		{
 				System.out.print(", ");
-				
-			}
+		}
 		}
 		
 		System.out.println();
@@ -31,13 +30,13 @@ public class randArrayAndSearch {
 		for (int a=1; a<values.length; a++)
 		{
 			if (values[a]>largest)
-			{
+		{
 				largest=values[a];
-			}
+		}
 			if (values[a]<smallest)
-			{
+		{
 				smallest=values[a];
-			}			
+		}			
 		}
 		
 		int product=largest * smallest;
